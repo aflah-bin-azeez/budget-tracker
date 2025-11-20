@@ -32,8 +32,7 @@ export default function App() {
         <Route path="/signup" element={<Signup />} />
 
         {/* Protected Routes */}
-        {/* <Route element={<ProtectedRoute />}> */}
-        <Route>
+        <Route element={<ProtectedRoute />}>
           <Route path="/" element={<Dashboard />} />
           <Route path="/reports" element={<Reports />} />
           <Route path="/categories" element={<Categories />} />
